@@ -76,10 +76,14 @@ console.log(temperatureCtoF(24));
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
-  /* code here */
+function temperatureInF(temp, scale) {
+  if (scale === "C"){
+    return temperatureCtoF(temp) + "F";
+  } else{
+    return Math.round(temp) + "F";
+  }
 }
-
+console.log(temperatureInF(24, "C"));
 
 /**
  * ### Challenge `makePersonObject`
