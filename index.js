@@ -36,7 +36,8 @@ function addNumbers(num1, num2) {
  * 
 */
 function sayGoodbye(name) {
-  return "Goodbye, "+ name +". Have a great day.";
+  // return "Goodbye, "+ name +". Have a great day.";
+  return `Goodbye, ${name}. Have a great day.`
 }
 console.log(sayGoodbye("Nicole"));
 /**
@@ -101,9 +102,10 @@ console.log(temperatureInF(24, "C"));
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
+function makePersonObject(id, name, email) {
+  return {id, name, email};
 }
+console.log(makePersonObject(5, "Leia", "leia@mail.com"));
 
 /**
  * ### Challenge `getName`
