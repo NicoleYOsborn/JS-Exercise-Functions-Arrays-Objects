@@ -124,7 +124,6 @@ function getName(obj) {
       return `Hello, my name is ${obj.name}`;
     }
   
-
 console.log(getName({ id: 1, name: 'Leia', email: 'leia@leia.com'}));
 
 /**
@@ -142,10 +141,14 @@ console.log(getName({ id: 1, name: 'Leia', email: 'leia@leia.com'}));
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
+function appleIndex(fruits) {
+  for (let i=0; i<fruits.length -1; i++){
+    if(fruits[i] === 'apple'){
+      return i;
+    }
+  }
 }
-
+console.log(appleIndex([ 'orange', 'grape', 'apple', 'banana', 'mango' ]));
 /**
  * ### Challenge `isItAnApple`
  * 
